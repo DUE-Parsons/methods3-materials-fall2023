@@ -18,14 +18,14 @@
                     <li>Open <strong>New York City Bike Routes.geojson</strong> in QGIS.</li>
                     <li>Open <strong>Council District Boundaries</strong> in QGIS.</li>
                     <li>Intersect the two files to get a bike routes file where the bike routes are clipped to the district boundaries. Use <strong>Vector &gt; Geoprocessing &gt; Intersection</strong> and select the two files, bike routes as input and council distrcts as overlay.</li>
-                    <li>Change your project's length units by going to <strong>Project &gt; Properties &gt; General</strong> and changing <strong>Units for distance measurement<strong> to <strong>miles</strong>.</li>
-                    <li>Use the field calculator to add a <strong>length</strong> field to the file projected in 2263.</li>
+                    <li>Change your project's length units by going to <strong>Project &gt; Properties &gt; General</strong> and changing <strong>Units for distance measurement</strong> to <strong>miles</strong>.</li>
+                    <li>Use the field calculator to add a <strong>length</strong> field to the file.</li>
                     <li>Search in the bottom left for <strong>Join attributes by location (summary)</strong>.</li>
                     <li>In this window select:
                         <ol>
                             <li><strong>Base layer</strong>: <strong>Council District Boundaries</strong></li>
                             <li><strong>Fields to summarise</strong>: <strong>length</strong> (as calculated above)</li>
-                            <li><strong>Summaries to calculate: <strong>sum</strong></li>
+                            <li><strong>Summaries to calculate</strong>: <strong>sum</strong></li>
                         </ol>
                     </li>
                     <li>Make a choropleth with the result.</li>
