@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 13 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 13</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide">
+            <h2>Final projects</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Final projects</h2>
+            <h2>Presentations 12/8</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Final projects</h2>
+            <h2>Final submission 12/10</h2>
+        </div>
+
+        <div class="slide">
+            <h2>OpenStreetMap</h2>
+        </div>
+
+        <div class="slide">
+            <h2>open data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>open data</h2>
+            <p>data that is:
+                <ul style="list-style: disc outside; padding-left: 50px;">
+                    <li>accessible (online, in a widely-used format)</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="slide">
+            <h2>open data</h2>
+            <p>data that is:
+                <ul style="list-style: disc outside; padding-left: 50px;">
+                    <li>accessible (online, in a widely-used format)</li>
+                    <li>licensed freely</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="slide">
+            <h2>open data</h2>
+            <p>data that is:
+                <ul style="list-style: disc outside; padding-left: 50px;">
+                    <li>accessible (online, in a widely-used format)</li>
+                    <li>licensed freely</li>
+                    <li>usually created by a large entity</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc-opendata-filming-locations.png);">
+            <a class="source" href="https://data.cityofnewyork.us/Business/Filming-Locations-Scenes-from-the-City-/qb3k-n8mm">data.cityofnewyork.us/Business/Filming-Locations-Scenes-from-the-City-/qb3k-n8mm</a>
+        </div>
+
+        <div class="slide">
+            <h2>collaborative data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/public_lab_archive.png);">
+            <a class="source" href="http://publiclab.org/archive">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>what is OpenStreetMap (OSM)?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-website.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/treasure_map.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm_cake_globe.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/equinix-datacenter.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/sotmus2014.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-show-me-the-way.gif);">
+            <a class="source" href="http://osmlab.github.io/show-me-the-way/">show me the way</a>
+        </div>
+
+        <div class="slide">
+            <iframe width="640" height="360" src="http://www.youtube.com/embed/7sC83j6vzjo?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-draw.png);">
+        </div>
+
+        <div class="slide">
+            <h2>"the free wiki map of the world"</h2>
+        </div>
+
+        <div class="slide">
+            <h2>license</h2>
+        </div>
+
+        <div class="slide">
+            <h2>license</h2>
+            <p>Open Database License (ODbL)</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/odbl.png);">
+            <a class="source" href="http://opendatacommons.org/licenses/odbl/summary/">
+                source
+            </a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>what does the data look like?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes-nodes.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes-ways.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes-closed-ways.png);">
+        </div>
+
+        <div class="slide">
+            <h2>shapes</h2>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>nodes (points)</li>
+                <li>ways (lines)</li>
+                <li>closed ways (polygons)</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>nodes, ways, closed ways</h2>
+            <p>are just shapes with <strong>no meaning</strong> until you give them attributes, as in any GIS</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-shapes.png);">
+        </div>
+
+        <div class="slide">
+            <h2>so you have to add attributes</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-attribute-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tags-union-square.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tags-bmt-broadway.png);">
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+                <li>and most of those columns would be empty (eg 'electrified')</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <p>an attribute table wouldn't work because:</p>
+            <ul style="list-style: disc outside; padding-left: 50px;">
+                <li>there would be thousands of columns</li>
+                <li>and most of those columns would be empty (eg 'electrified')</li>
+                <li>what you could map would be predetermined</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>key-value pairs</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>leisure=park</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>name=Union Square West</p>
+        </div>
+
+        <div class="slide">
+            <h2>tags</h2>
+            <p>we make them up as we go!</p>
+        </div>
+
+        <div class="slide">
+            <h2>folksonomy</h2>
+        </div>
+
+        <div class="slide">
+            <h2>folksonomy</h2>
+            <p>a collaborative system of categorization</p>
+        </div>
+
+        <div class="slide">
+            <h2>you can tag things any way you want</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm_weird_tags.png);">
+            <a class="source" href="https://twitter.com/professorlemeza/status/523229634755047424">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taginfo_unicycle_barely.png);">
+            <a class="source" href="http://taginfo.openstreetmap.org/keys/unicycle#values">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/overpass_unicycle_barely.png);">
+            <a class="source" href="http://overpass-turbo.eu/?w=%22unicycle%22%3D%22barely%22+global&R">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wiki_barrier_kissinggate.png);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Tag:barrier%3Dkissing_gate">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>let's do a little mapping</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-website.png);">
+            <h2>go to <a href="https://openstreetmap.org">openstreetmap.org</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-signup.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-signup.png);">
+            <h2>sign up for an account</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-building.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-building.png);">
+            <h2>go somewhere you know, click Edit and look for something unmapped</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-building.png);">
+            <h2>(buildings are easy if you don't find something else)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>looking for something to map?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/osm-tasks.png);">
+            <a class="source" href="https://tasks.openstreetmap.us/project/224">source</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>filtering data</h2>
+        </div>
+
+        <div class="slide">
+            <h2>here's <a href="data/week13data.zip">some data</a> to follow along with</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fire-perimeters.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fire-perimeters.png);">
+            <h2>sometimes you have more data than you need</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fire-perimeters.png);">
+            <h2>or you want to do something different with data depending on attribute values</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-select-expression.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-select-expression.png);">
+            <h2>previously, we've selected by expression</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-select-expression-export.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-select-expression-export.png);">
+            <h2>then exported that selection</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter.png);">
+            <h2>another way</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-expression.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-result.png);">
+        </div>
+
+        <div class="slide">
+            <h2>you could do this as many times as you like</h2>
+        </div>
+
+        <div class="slide">
+            <h2>the data isn't duplicated&mdash;it uses the same file on your computer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-multiple.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-multiple-styles.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-year.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-year.png);">
+            <h2>you can filter by text (but be careful)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-fuzzy.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-fuzzy.png);">
+            <h2><em>ilike</em>: "fuzzy" matching</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-fuzzy.png);">
+            <h2><em>i</em> is short for "ignore case"</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter-fuzzy.png);">
+            <h2><em>%</em> matches any text</h2>
+        </div>
+
+        <div class="slide">
+            <h2>if you're only filtering to set styles, there might be a better way</h2>
+        </div>
+
+        <div class="slide">
+            <h2>rule-based styles</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-rule-based-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-rule-based-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-rule-based-1.png);">
+            <h2>like filtering and styling that filtered layer, but you don't have duplicate layers</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-rule-based-2.png);">
+        </div>
+
+    </body>
+</html>
