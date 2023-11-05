@@ -26,463 +26,578 @@
         </div>
 
         <div class="slide">
-            <h2>thinking ahead to presentations</h2>
+            <h2>so how does a web map work?</h2>
         </div>
 
         <div class="slide">
-            <h2>thinking ahead to presentations (11/29 + 12/6)</h2>
+            <p>(a few of these slides are adapted from these excellent <a href="http://maptime.github.io/anatomy-of-a-web-map/#45">Maptime slides</a>)</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+            <h2>most webmaps start with a basemap</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+            <h2>basemaps are tiled</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+            <h2>tiles are 256 x 256 pixel images</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles.gif);">
+            <h2>they use the same <em>zoom</em>, <em>x</em>, and <em>y</em> values, so they're interchangeable</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/openwhatevermap.png);">
+            <a href="http://www.openwhatevermap.xyz/" class="source">openwhatevermap.xyz</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom-2.jpg);">
+            <a href="http://maptimeboston.github.io/web-maps-101/#17" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom-3.jpg);">
+            <a href="http://maptimeboston.github.io/web-maps-101/#17" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom-3.jpg);">
+            <h2>as you zoom in, the number of tiles quadruples</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom-3.jpg);">
+            <h2>if you made tiles for all of zoom 18 you'd have nearly 69 <em>billion</em> images</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-loading.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-loading.gif);">
+            <h2>that's why browsers only load what you need to see</h2>
+            <a href="http://maptimeboston.github.io/web-maps-101/#17" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom0.png);">
         </div>
 
         <div class="slide">
-            <h2>plan on sharing how you're applying what we've covered in class</h2>
+            <h2>each tile is just an image on the internet</h2>
+            <p>http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom0.png);">
+            <p style="background: white;">http://a.tile.stamen.com/toner/0/0/0.png</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/tiles-zoom1.png);">
+            <h2>these tiles use OpenStreetMap data</h2>
+            <h2>+ CartoCSS</h2>
         </div>
 
         <div class="slide">
-            <h2>it's assumed that you will be showing a work in progress</h2>
+            <h2>so how do you <em>make</em> base maps?</h2>
         </div>
 
         <div class="slide">
-            <h2>you'll have around 20 minutes</h2>
+            <h2>it depends!</h2>
         </div>
 
         <div class="slide">
-            <h2>I encourage you to make slides</h2>
+            <h2>in theory you can make tiles on your own</h2>
         </div>
 
-        <div class="slide">
-            <h2>screenshots of your process can be useful, too</h2>
+        <div class="slide" style="background-image: url(img/mapbox.png);">
+            <h2>but many mapmakers turn to Mapbox</h2>
         </div>
 
-        <div class="slide">
-            <h2>consider covering</h2>
-            <ul style="list-style: disc outside; padding-left: 50px;">
-                <li>project topic / goal</li>
-            </ul>
+        <div class="slide" style="background-image: url(img/mapbox-studio.png);">
+            <a href="https://www.mapbox.com/mapbox-studio/" class="source">source</a>
         </div>
 
-        <div class="slide">
-            <h2>consider covering</h2>
-            <ul style="list-style: disc outside; padding-left: 50px;">
-                <li>project topic / goal</li>
-                <li>roadblocks</li>
-            </ul>
+        <div class="slide" style="background-image: url(img/mapbox-studio.png);">
+            <h2>Mapbox provides modified OpenStreetMap data</h2>
         </div>
 
-        <div class="slide">
-            <h2>consider covering</h2>
-            <ul style="list-style: disc outside; padding-left: 50px;">
-                <li>project topic / goal</li>
-                <li>roadblocks</li>
-                <li>outcomes / successes</li>
-            </ul>
+        <div class="slide" style="background-image: url(img/mapbox-pricing.png);">
+            <a href="https://www.mapbox.com/pricing/" class="source">source</a>
         </div>
 
-        <div class="slide">
-            <h2>consider covering</h2>
-            <ul style="list-style: disc outside; padding-left: 50px;">
-                <li>project topic / goal</li>
-                <li>roadblocks</li>
-                <li>outcomes / successes</li>
-                <li>where the project is now</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <h2>consider covering</h2>
-            <ul style="list-style: disc outside; padding-left: 50px;">
-                <li>project topic / goal</li>
-                <li>roadblocks</li>
-                <li>outcomes / successes</li>
-                <li>where the project is now</li>
-                <li>future work</li>
-            </ul>
-        </div>
-
-        <div class="slide" style="background-image: url(img/projects-2017.png);">
-            <a class="source" href="https://due-parsons.github.io/methods3-fall2017/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/project-submission.png);">
-            <a class="source" href="https://docs.google.com/forms/d/e/1FAIpQLSfNx58ZNlup_l-dfxMuPnbnR-VQVKDLpah8JprB4trw8hQkxA/viewform">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/project-submission.png);">
-            <h2>form is in Canvas, feel free to work ahead on this</h2>
-            <a class="source" href="https://docs.google.com/forms/d/e/1FAIpQLSfNx58ZNlup_l-dfxMuPnbnR-VQVKDLpah8JprB4trw8hQkxA/viewform">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/final-form-fields.png);">
-        </div>
-
-        <div class="slide">
-            <h2>remote sensing</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/nadar.jpg);">
-            <a class="source" href="http://professionalaerialphotographers.com/content.aspx?page_id=22&club_id=808138&module_id=158950">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/nadar_paris.jpg);">
-            <a class="source" href="http://www.geog.ucsb.edu/~jeff/115a/remotesensinghistory.html">1858, Paris</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/nadar_paris2.jpg);">
-            <a class="source" href="http://www.geog.ucsb.edu/~jeff/115a/remotesensinghistory.html">1868, Paris</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/sf_kite.jpg);">
-            <a class="source" href="https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake">1906, San Francisco</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/sf_kite_zoom.jpg);">
-            <a class="source" href="https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake">1906, San Francisco</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/lawrence_kite_camera.jpg);">
-            <a class="source" href="http://robroy.dyndns.info/lawrence/air+space.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/lawrence_kite_chain.jpg);">
-            <a class="source" href="http://robroy.dyndns.info/lawrence/air+space.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/pigeons_cameras.jpg);">
-            <a class="source" href="https://commons.wikimedia.org/wiki/Category:Pigeons_in_aerial_photography">Neubronner, 1908</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/pigeon_photos.jpg);">
-            <a class="source" href="https://commons.wikimedia.org/wiki/Category:Pigeons_in_aerial_photography">Neubronner, 1908</a>
-        </div>
-
-        <div class="slide">
-            <h2>Landsat</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_timeline2.jpg);">
-            <a class="source" href="http://www.space.com/19716-nasa-landsat-satellites-earth-space-infographic.html">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>the longest continuous satellite imagery collection program</h2>
-        </div>
-
-        <div class="slide">
-            <h2>Landsat is "earth observing", as opposed to people observing (spying)</h2>
-        </div>
-
-        <div class="slide">
-            <h2>1972: first Landsat satellite launched</h2>
-        </div>
-
-        <div class="slide">
-            <h2>1985: Landsat is privatized, run by Hughes and RCA</h2>
-        </div>
-
-        <div class="slide">
-            <h2>2001: Landsat fully returned to public hands</h2>
-        </div>
-
-        <div class="slide">
-            <h2>2007: all Landsat imagery becomes free</h2>
-        </div>
-
-        <div class="slide">
-            <h2>2013: Landsat 8 launched</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat.jpg);">
-            <a class="source" href="http://www.thegeofactor.com/a-new-look-at-the-earth-landsat-8-launches/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_launch.jpg);">
-            <a class="source" href="http://www.ssec.wisc.edu/news/articles/2565">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>Landsat imagery is used for:</h2>
-        </div>
-
-        <div class="slide">
-            <ul style="list-style: disc;">
-                <li>irrigated water monitoring</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <ul style="list-style: disc;">
-                <li>irrigated water monitoring</li>
-                <li>land cover mapping</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <ul style="list-style: disc;">
-                <li>irrigated water monitoring</li>
-                <li>land cover mapping</li>
-                <li>land use change studies</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <ul style="list-style: disc;">
-                <li>irrigated water monitoring</li>
-                <li>land cover mapping</li>
-                <li>land use change studies</li>
-                <li>invasive species detection and monitoring</li>
-            </ul>
-        </div>
-
-        <div class="slide">
-            <ul style="list-style: disc;">
-                <li>irrigated water monitoring</li>
-                <li>land cover mapping</li>
-                <li>land use change studies</li>
-                <li>invasive species detection and monitoring</li>
-                <li>coastal wetlands monitoring</li>
-            </ul>
-            <a href="http://remotesensing.usgs.gov/landsat_fees.php" class="source">source</a>
-        </div>
-
-        <div class="slide">
-            <h2><em>resolution</em>: how much area on the ground is represented by one pixel</h2>
-        </div>
-
-        <div class="slide">
-            <h2>if a satellite has 30m resolution, each pixel represents a 30m x 30m square</h2>
-        </div>
-
-        <div class="slide">
-            <h2>a smaller number for resolution is better</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/satellite_comparison.png);">
-            <a class="source" href="http://satsummit.github.io/landscape/#capture">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat-overview.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat-zoom.png);">
-        </div>
-
-        <div class="slide">
-            <h2>temporal resolution</h2>
-        </div>
-
-        <div class="slide">
-            <h2>how frequently does the satellite take a picture of a given location?</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_paths.gif);">
-            <a class="source" href="http://www.fao.org/docrep/003/t0446e/t0446e04.htm">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_scenes.gif);">
-            <a class="source" href="http://cast.uark.edu/projects/lulc-change-in-carroll-county/literature-review.html">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>bands</h2>
-        </div>
-
-        <div class="slide">
-            <h2>satellites produce a number of images at different wavelengths</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/em_spectrum.jpg);">
-            <a class="source" href="http://www.ces.fau.edu/nasa/module-2/radiation-sun.php">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_wavelengths.png);">
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?p=10643">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_truecolor.jpg);">
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_truecolor.jpg);">
-            <h2>bands 2, 3, and 4 (blue, green, and red)</h2>
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_band5.jpg);">
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_band5.jpg);">
-            <h2>band 5 (near infrared)</h2>
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/publiclab_infrared.jpg);">
-            <a class="source" href="https://publiclab.org/wiki/near-infrared-camera-history">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_bands6_7.jpg);">
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_bands6_7.jpg);">
-            <h2>band 6 and 7 (shortwave infrared)</h2>
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_band9.jpg);">
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat_band9.jpg);">
-            <h2>band 9 (clouds)</h2>
-            <a class="source" href="http://landsat.gsfc.nasa.gov/?page_id=5377">source</a>
-        </div>
-
-        <div class="slide">
-            <h2>you will combine bands to suit your needs</h2>
-        </div>
-
-        <div class="slide" style="background-image: url(img/landsat8_infrared.png);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/bands.gif);">
-            <a class="source" href="http://satsummit.github.io/landscape/#capture">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/semi-automatic-classification-cropland.png);">
-            <a class="source" href="http://fromgistors.blogspot.com/2014/01/land-cover-classification-of-cropland.html">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/scp.png);">
+        <div class="slide" style="background-image: url(img/mapbox-pricing.png);">
+            <h2>not free, but free up to a point</h2>
+            <a href="https://www.mapbox.com/pricing/" class="source">source</a>
         </div>
 
         <div class="slide intermission"></div>
 
         <div class="slide">
-            <h2>LiDAR</h2>
+            <h2>creating styles in Mapbox</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-go-to-studio.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-landing.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-select-base-style.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-new.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-layers.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-layers.png);">
+            <h2>like most GISs, Mapbox maps are layer-based</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-components.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-components.png);">
+            <h2>layers are grouped into similar feature types, a layer group is called a component</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-edit.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-edit.png);">
+            <h2>you can change all of the layers in a component simultaneously</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-layer-edit.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-layer-edit.png);">
+            <h2>layers have a lot more settings than components</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-layer-edit.png);">
+            <h2>you can "override" component settings and change them</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-new.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-new.png);">
+            <h2>not sure which component or layer a feature is on?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer.png);">
+            <h2>click it!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer-edit.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer-edited.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer-edited.png);">
+            <h2>want to see exactly which features are in a layer?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer-edited.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-feature-layer-edited.png);">
+            <h2>first, go to the layer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-select.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-select.png);">
+            <h2>click Select Data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-select.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-select.png);">
+            <h2>green features will appear on the map, pink are on the layer but filtered out</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray-click.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray-click.png);">
+            <h2>click a feature to see the data behind it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray-filters.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-view-layer-xray-filters.png);">
+            <h2>some settings can't be changed without "ejecting" a layer from a component</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-component-eject.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-zoom-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-zoom-0.png);">
+            <h2>you can vary properties by attribute and zoom</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-studio-field.png);">
         </div>
 
         <div class="slide">
-            <h2>light detection and ranging</h2>
+            <h2><a href="inclass-mapbox.html" target="_blank">in-class exercise</a></h2>
         </div>
 
         <div class="slide">
-            <h2>LiDAR actively uses lasers and sees how long it takes for a reflection to arrive</h2>
+            <h2>for the most part, cartographic conventions hold with basemaps</h2>
         </div>
 
         <div class="slide">
-            <h2>like SONAR (sound) and RADAR (radio waves)</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>scale</li>
+                <li>hierarchy</li>
+                <li>color</li>
+                <li>symbology</li>
+            </ul>
         </div>
 
-        <div class="slide" style="background-image: url(img/lidar_diagram.png);">
-            <a class="source" href="http://gis.utah.gov/data/elevation-terrain-data/exploring-lidar/">source</a>
+        <div class="slide">
+            <h2>but with basemaps, be aware that <em>zooming</em> and <em>panning</em> change how it will be viewed</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/lidar.jpg);">
-            <a class="source" href="http://www.mckimcreed.com/airborne-lidar/">source</a>
+        <div class="slide" style="background-image: url(img/surging-seas.png);">
+            <a class="source" href="https://ss2.climatecentral.org/#12/40.6211/-73.9170?show=satellite&projections=0-K14_RCP85-SLR&level=9&unit=feet&pois=hide">source</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/lidar_oregon.png);">
-            <a class="source" href="http://eijournal.com/print/articles/consider-the-benefits-of-mobile-lidar-for-transportation-projects">source</a>
+        <div class="slide" style="background-image: url(img/land-grab-universities.png);">
+            <a class="source" href="https://www.landgrabu.org/">source</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/streetview.gif);">
-        </div>
-
-        <div class="slide" style="background-image: url(img/point_cloud_city.gif);">
-            <a class="source" href="https://vimeo.com/89982874">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/self_driving_car.gif);">
-            <a class="source" href="http://thenextweb.com/shareables/2015/11/12/this-is-how-a-self-driving-car-sees-the-streets-of-london/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/lidar-new-england.png);">
-            <a class="source" href="http://news.nationalgeographic.com/news/2014/01/140103-new-england-archaeology-lidar-science/">source</a>
-        </div>
-
-        <div class="slide" style="background-image: url(img/lidar-new-england-filtered.png);">
-            <a class="source" href="http://news.nationalgeographic.com/news/2014/01/140103-new-england-archaeology-lidar-science/">source</a>
+        <div class="slide" style="background-image: url(img/wapo-renters.png);">
+            <a class="source" href="https://www.washingtonpost.com/news/wonk/wp/2016/05/25/how-much-a-decent-apartment-costs-you-in-every-county/?noredirect=on&utm_term=.32ddb5129c24">source</a>
         </div>
 
         <div class="slide intermission"></div>
 
         <div class="slide">
-          <h2>using R in QGIS</h2>
+            <h2>using Mapbox tiles in Felt</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/processing-r-plugin.png);">
+        <div class="slide" style="background-image: url(img/mapbox-publish.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/processing-r-homepage.png);">
-            <a class="source" href="https://north-road.github.io/qgis-processing-r/">source</a>
+        <div class="slide" style="background-image: url(img/mapbox-publish-1.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/processing-r-docs.png);">
-            <a class="source" href="https://docs.qgis.org/3.22/en/docs/training_manual/processing/r_intro.html">source</a>
+        <div class="slide" style="background-image: url(img/mapbox-publish-1.png);">
+            <h2>do this every time you want your changes to go live</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-resources-plugin.png);">
+        <div class="slide" style="background-image: url(img/mapbox-share.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-resources-plugin.png);">
-          <h2>this is a general resources plugin that has some R scripts</h2>
+        <div class="slide" style="background-image: url(img/mapbox-share-1.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-resources-plugin-r.png);">
+        <div class="slide" style="background-image: url(img/mapbox-share-1.png);">
+            <h2>copy the integration URL</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-processing-toolbox.png);">
+        <div class="slide" style="background-image: url(img/felt-add-mapbox-0.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-r-histogram.png);">
+        <div class="slide" style="background-image: url(img/felt-add-mapbox-1.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-r-histogram.png);">
-          <h2>the R script gets inputs similar to the way you would for other QGIS functionality</h2>
+        <div class="slide" style="background-image: url(img/felt-add-mapbox-2.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-r-results.png);">
+        <div class="slide" style="background-image: url(img/felt-add-mapbox-3.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-r-results-page.png);">
+        <div class="slide" style="background-image: url(img/felt-add-other-tiles.png);">
+            <a href="https://feltmaps.notion.site/Where-To-Find-Custom-Map-Backgrounds-30f85a712250421fa53a193cdf097b6a" class="source">source</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-r-new-script.png);">
+        <div class="slide">
+            <h2><a href="inclass-mapbox-felt.html" target="_blank">in-class exercise</a></h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-r-new-script.png);">
-          <h2>you can create R scripts from scratch, too</h2>
+        <div class="slide">
+            <h2>you can add your own data to Mapbox basemaps</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-python-example.png);">
+        <div class="slide">
+            <h2>for example, when you have too much data to put in Felt, and you don't want popups on the data</h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-python-example.png);">
-          <h2>you can write python functions in QGIS</h2>
+        <div class="slide">
+            <h2>I recommend adding data as a <em>tileset</em></h2>
         </div>
 
-        <div class="slide" style="background-image: url(img/qgis-python-example.png);">
-          <h2>handy if you know python and need to do something moderately complicated</h2>
+        <div class="slide">
+            <p>1. Upload data (such as a zipped shapefile)</p>
+            <p>2. Add the tileset to your style</p>
         </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-tileset-link.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-tileset.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-upload-tileset.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-data-add-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-upload-tileset-processing.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-layer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-layer-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-layer-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapbox-add-layer-3.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass-mapbox-data.html" target="_blank">in-class exercise</a></h2>
+        </div>
+
 
         <div class="slide intermission"></div>
 
         <div class="slide">
-          <h2>TODO Foursquare Studio? Datawrapper? Storymaps?</h2>
+            <h2>dot density maps</h2>
         </div>
 
         <div class="slide">
-          <h2>TODO embed felt map in storymaps</h2>
+            <h2>if you want to follow along, try using <a href="data/week11data.zip">this data</a></h2>
         </div>
 
+        <div class="slide" style="background-image: url(img/race-block-nyc.png);">
+            <a class="source" href="http://www.urbanresearchmaps.org/plurality/blockmaps.htm">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/race-block-nyc.png);">
+            <h2>sometimes choropleths flatten data too much</h2>
+            <a class="source" href="http://www.urbanresearchmaps.org/plurality/blockmaps.htm">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-atlanta.png);">
+            <a class="source" href="https://www.nytimes.com/interactive/2015/07/08/us/census-race-map.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-atlanta.png);">
+            <h2>a good dot density map can show more nuance</h2>
+            <a class="source" href="https://www.nytimes.com/interactive/2015/07/08/us/census-race-map.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-education.png);">
+            <a class="source" href="http://personal.tcu.edu/kylewalker/maps/education/colorsafe/#10.52/37.7588/-122.3156">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-chicago.png);">
+            <a class="source" href="http://www.radicalcartography.net/index.html?chicagodots">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-chicago-income.png);">
+            <a class="source" href="http://www.radicalcartography.net/index.html?chicagodots">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-us.png);">
+            <a class="source" href="https://demographics.virginia.edu/DotMap/index.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dot-density-nyc.png);">
+            <a class="source" href="https://demographics.virginia.edu/DotMap/index.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>how?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-0.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-0.png);">
+            <h2>you need polygons and a column of numeric data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1a.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1a.png);">
+            <h2>tell QGIS how many points to make</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1a.png);">
+            <h2>sometimes this will be the value in the column itself</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-1a.png);">
+            <h2>sometimes you will want to do some math (eg divide by 100)</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-2.png);">
+            <h2>keep in mind that you will have a new shapefile with the points you create</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-dot-density-2.png);">
+            <h2>style in a way that works for the scale you're displaying at</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dots-dasymetric-0.png);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2013/10/dasymetric-dot-density-and-uncanny.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/dots-dasymetric-1.png);">
+            <a class="source" href="http://uxblog.idvsolutions.com/2013/10/dasymetric-dot-density-and-uncanny.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-historical-ny.png);">
+            <a class="source" href="https://mappinghny.com/map">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-dot-density.png);">
+            <a class="source" href="https://stamen.com/mapping-historical-new-york-with-dot-density-maps/">source</a>
+        </div>
+
+
+        <!-- TODO dot density maps -->
         <div class="slide intermission"></div>
 
-        <div class="slide" style="background-image: url(img/codecademy.png);">
-            <a class="source" href="https://www.codecademy.com/learn/learn-html">codecademy</a>
+        <div class="slide" style="background-image: url(img/google-bus-pinata.png);">
         </div>
 
-        <div class="slide" style="background-image: url(img/shayhowe.png);">
-            <a class="source" href="http://learn.shayhowe.com/html-css">learn.shayhowe.com/html-css</a>
+        <div class="slide" style="background-image: url(img/google-bus-pinata.png);">
+            <h2>collecting your own data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-bus-pinata.png);">
+            <a href="http://allthingsd.com/20130506/demonstrators-smash-google-bus-pinata-in-san-francisco/">
+                Demonstrators Smash Google Bus Piñata in San Francisco
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-overall.gif);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-zoom.gif);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-bus-foursquare.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers.png);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers2.png);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers2.png);">
+            <p style="background: rgba(255, 255, 255, 0.8);">"We enlisted people to go to stops, measure traffic and count people getting off and on and we hired bike messengers to see where the buses went..."</p>
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers3.png);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers3.png);">
+            <p style="background: rgba(255, 255, 255, 0.8);">"... The cyclists used Field Papers to transcribe the various routes and what they found out, which we recompiled back into a database of trips, stops, companies and frequency."</p>
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-zoom.gif);">
+            <a class="source" href="https://hi.stamen.com/the-city-from-the-valley-57e835ee3dc6#.rfczry71y">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-make-atlas.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-print-atlas.png);">
+            <a class="source" href="http://fieldpapers.org/atlas.php?id=fhnp4qks#18/40.73649/-73.99715">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-page.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/walkingpapers-osm.jpg);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Walking_Papers">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-uploaded.png);">
+            <a class="source" href="http://fieldpapers.org/atlas.php?id=ncz5lrfs#17/40.67782/-73.96397">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-uploaded.png);">
+            <ol style="background: rgba(255, 255, 255, 0.8); padding: 25px;">
+                <li>download GeoTIFF</li>
+                <li>open in QGIS</li>
+                <li>create new shapefile and trace</li>
+            </ol>
+        </div>
+
+        <div class="slide">
+            <h2>want to collect data directly on a phone?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maps-me.png);">
+            <h2>maps.me</h2>
+            <a class="source" href="https://blog.cartong.org/2017/03/14/gis-data-collection/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/maps-me-tutorial.png);">
+            <a class="source" href="https://gfc.ucdavis.edu/guides/mapsme.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qfield.png);">
+            <a class="source" href="https://qfield.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qfield.png);">
+            <h2>basically QGIS on an android device</h2>
+            <a class="source" href="https://qfield.org/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qfield.png);">
+            <h2>you can load a QGIS project and create/edit data in it</h2>
+            <a class="source" href="https://qfield.org/">source</a>
         </div>
 
     </body>
